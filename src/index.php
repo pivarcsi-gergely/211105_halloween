@@ -15,5 +15,10 @@ $resztvevok = array($lako1, $lako2, $lako3, $lako4);
 $esemeny1 = new Esemeny("Kísértetjárta kastélytúra", $lako1, $resztvevok, new DateTime());
 $esemeny2 = new Esemeny("Halállaza hullámvasút", $lako4, $resztvevok, new DateTime());
 
-echo $esemeny1->getNev();
+echo '<p>' . $lako1->getNev() . '<br>';
+echo $lako2->getNev() . '<br>';
+echo $lako3->getNev() . '<br>';
+echo $lako4->getNev() . '<br></p>';
+
+echo $esemeny1->getSzervezo();
 ?>

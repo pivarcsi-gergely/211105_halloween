@@ -24,11 +24,18 @@ class Esemeny {
     }
     public function getSzervezo()
     {
-        return $this->szervezo;
+        return $this->szervezo->getNev();
     }
     public function getIdo()
     {
         return $this->ido->format('Y-m-d');
+    }
+
+    public function getLista()
+    {
+        foreach ($this->resztvevok as $elem) {
+            echo $elem;
+        }
     }
 }
 
